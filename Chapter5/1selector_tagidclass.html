@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1selector_tagidclass</title>
+
+    <style>
+        /**{color: aqua;}
+        h1{color:red}
+        p{color: blue}
+
+        h1,p{color: yellowgreen;}*/
+
+        #header{
+            width: 800px; margin: 0 auto;
+            background-color: red;
+        }
+        #warp{
+            width: 800px; margin: 0 auto;
+            overflow: hidden;
+        }
+        #aside{
+            width: 200px; float: left;
+            background-color: blue;
+        }
+        #content{
+            width: 600px; float:left;
+            background:green;
+        }
+        #rint{color: red;}
+
+        /*.select {color: orchid;}*/
+        li.select{color:blueviolet;}
+        
+        /*class="item header"*/
+        .item{color:red;}
+        .header{background-color: aquamarine;}
+    </style>
+</head>
+<body>
+    <!--id속성을 중복으로 사용하면 해당 id속성을 표시한 모든 태그에 스타일 적용됨
+    하지만 문제 발생 소지 있음 ==> 여러개 쓸때는 class-->
+    <h2 id="rint">1. 전체 선택자</h2>
+    <h2 id="rint">2. 태그선택자</h2>
+    <h2 id="rint">3. 아이디 선택자</h2>
+    <h2>4. 클래스 선택자</h2>
+    <hr>
+
+    <h1 class="item header">wasdwasdwasd</h1>
+    <hr>
+    <ul>
+        <li clacc="select">사과</li>
+        <li>바나나</li>
+        <li>오렌지</li>
+        <li clacc="select">감</li>
+    </ul>
+    <div id="header">
+        <h1>#header 태그</h1>
+    </div>
+    <div id="wrap">
+        <div id="aside">
+        <h1>#asid 태그</h1>
+    </div>
+    </div>
+    <div id="content">
+        <h1>#content 태그</h1>
+    </div>
+
+    <h1>제목 글자</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus quasi veniam itaque facilis doloremque. Est excepturi sint, atque ipsam, in minima odio necessitatibus quasi, ullam sequi itaque dicta amet? Inventore.</p>
+
+</body>
+</html>
