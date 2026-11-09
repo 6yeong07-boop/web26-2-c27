@@ -2,119 +2,195 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-
     <title>안녕하세요</title>
+    <!-- 1. 초기화 -->
     <style>
-        a{text-decoration: none;}
+        * {
+            margin: 0; padding: 0;
+            font-family: '맑은 고딕', 'Malgun Gothic', Gothic, sans-serif;
+        }
+
+        a { text-decoration: none; }
+
+        li { list-style: none; }
+    </style>
+    <!-- 2. 페이지 구성 -->
+    <style>
+        body {
+            width: 960px; margin: 0 auto;
+            background: #E6E6E6;
+        }
+
+        #page-wrapper {
+            background: white;
+            margin: 40px 0; padding: 10px 20px 20px 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+        }
+    </style>
+    <!-- 3. 헤더 구성 -->
+    <style>
+        #main-header { padding: 40px 50px; }
+
+        .master-title {
+            font-size: 30px;
+            color: #181818;
+        }
+    </style>
+    <!-- 4. 챕터 박스 (세로 배치) -->
+    <style>
+        .chapter-box {
+            border: 1px solid #C8C8C8;
+            border-radius: 8px;
+            padding: 15px 20px 20px 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 6px rgba(100, 100, 100, 0.15);
+        }
+
+        .chapter-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #181818;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #383838;
+        }
+
+        .chapter-box li a {
+            display: block;
+            padding: 5px 8px;
+            font-size: 14px;
+            color: #383838;
+            border-radius: 4px;
+        }
+        .chapter-box li a:hover {
+            background: black;
+            color: white;
+        }
+
+        #main-footer {
+            padding-top: 10px;
+            border-top: 1px solid #C8C8C8;
+            font-size: 13px;
+            color: #6C6C6C;
+        }
     </style>
 </head>
 <body>
-    안녕하세요/*footor학번이름코멘트, 하이퍼링크 언더바 없애기*/
-   
-Chapter2
-<a href="Chapter2/01HTMLPage.html">01HTMLPage.html</a><br>
-<a href="Chapter2/01주석.html">01주석.html</a><br>
-<a href="Chapter2/02HTMLPageWithStyle.html">02HTMLPageWithStyle.html</a><br>
-<a href="Chapter2/04HTMLPageWithOuterScrtipt.html">04HTMLPageWithOuterScrtipt.html</a><br>
-<a href="Chapter2/05HTMLPageWithScript.html">05HTMLPageWithScript.html</a><br>
-<a href="Chapter2/07HTMLPageWithOuterScript.html">07HTMLPageWithOuterScript.html</a><br>
-<a href="Chapter2/08HTMLPageWithError.html">08HTMLPageWithError.html</a><br>
+<div id="page-wrapper">
+    <header id="main-header">
+        <h1 class="master-title">안녕하세요</h1>
+    </header>
 
-Chapter3
-<a href="Chapter3/1text_header.html">1text_header.html</a><br>
-<a href="Chapter3/3text_content.html">3text_content.html</a><br>
-<a href="Chapter3/5text_anchor.html">5text_anchor.html</a><br>
-<a href="Chapter3/10nested_list.html">10nested_list.html</a><br>
-<a href="Chapter3/11table_basic.html">11table_basic.html</a><br>
-<a href="Chapter3/12table_cell.html">12table_cell.html</a><br>
-<a href="Chapter3/13table_span.html">13table_span.html</a><br>
-<a href="Chapter3/14image_basic.html">14image_basic.html</a><br>
+    <div class="chapter-box">
+        <h2 class="chapter-title">Chapter2</h2>
+        <ul>
+            <li><a href="Chapter2/01HTMLPage.html">01HTMLPage.html</a></li>
+            <li><a href="Chapter2/01주석.html">01주석.html</a></li>
+            <li><a href="Chapter2/02HTMLPageWithStyle.html">02HTMLPageWithStyle.html</a></li>
+            <li><a href="Chapter2/04HTMLPageWithOuterScrtipt.html">04HTMLPageWithOuterScrtipt.html</a></li>
+            <li><a href="Chapter2/05HTMLPageWithScript.html">05HTMLPageWithScript.html</a></li>
+            <li><a href="Chapter2/07HTMLPageWithOuterScript.html">07HTMLPageWithOuterScript.html</a></li>
+            <li><a href="Chapter2/08HTMLPageWithError.html">08HTMLPageWithError.html</a></li>
+        </ul>
+    </div>
 
-Chapter4
-<a href="Chapter4/1from_basic.html">1from_basic.html</a><br>
-<a href="Chapter4/2note_from.html">2note_from.html</a><br>
-<a href="Chapter4/4frim_selectBasic.html">4frim_selectBasic.html</a><br>
-<a href="Chapter4/8note_textarea.html">8note_textarea.html</a><br>
-<a href="Chapter4/9space_block.html">9space_block.html</a><br>
-<a href="Chapter4/12space_semanticLess.html">12space_semanticLess.html</a><br>
-<a href="Chapter4/13space_semantic.html">13space_semantic.html</a><br>
+    <div class="chapter-box">
+        <h2 class="chapter-title">Chapter3</h2>
+        <ul>
+            <li><a href="Chapter3/1text_header.html">1text_header.html</a></li>
+            <li><a href="Chapter3/3text_content.html">3text_content.html</a></li>
+            <li><a href="Chapter3/5text_anchor.html">5text_anchor.html</a></li>
+            <li><a href="Chapter3/10nested_list.html">10nested_list.html</a></li>
+            <li><a href="Chapter3/11table_basic.html">11table_basic.html</a></li>
+            <li><a href="Chapter3/12table_cell.html">12table_cell.html</a></li>
+            <li><a href="Chapter3/13table_span.html">13table_span.html</a></li>
+            <li><a href="Chapter3/14image_basic.html">14image_basic.html</a></li>
+        </ul>
+    </div>
 
-Chapter5
-<a href="Chapter5/1selector_tagidclass.html">1selector_tagidclass.html</a><br>
-<a href="Chapter5/9attribute_basic.html">9attribute_basic.html</a><br>
-<a href="Chapter5/11desc_descendants.html">11desc_descendants.html</a><br>
-<a href="Chapter5/13desc_tableWithChildren.html">13desc_tableWithChildren.html</a><br>
-<a href="Chapter5/14etc_state.html">14etc_state.html</a><br>
-<a href="Chapter5/16etc_structure.html">16etc_structure.html</a><br>
-<a href="Chapter5/17etc_structureFalse.html">17etc_structureFalse.html</a><br>
-<a href="Chapter5/19CSSUnit_base.html">19CSSUnit_base.html</a><br>
+    <div class="chapter-box">
+        <h2 class="chapter-title">Chapter4</h2>
+        <ul>
+            <li><a href="Chapter4/1from_basic.html">1from_basic.html</a></li>
+            <li><a href="Chapter4/2note_from.html">2note_from.html</a></li>
+            <li><a href="Chapter4/4frim_selectBasic.html">4frim_selectBasic.html</a></li>
+            <li><a href="Chapter4/8note_textarea.html">8note_textarea.html</a></li>
+            <li><a href="Chapter4/9space_block.html">9space_block.html</a></li>
+            <li><a href="Chapter4/12space_semanticLess.html">12space_semanticLess.html</a></li>
+            <li><a href="Chapter4/13space_semantic.html">13space_semantic.html</a></li>
+        </ul>
+    </div>
 
-Chapter6
-<a href="Chapter6/1_box_widthHeight.html">1_box_widthHeight.html</a><br>
-<a href="Chapter6/8display_none.html">8display_none.html</a><br>
-<a href="Chapter6/12display_inlineWithMargin.html">12display_inlineWithMargin.html</a><br>
-<a href="Chapter6/13display_inline-blockWithhMargin.html">13display_inline-blockWithhMargin.html</a><br>
-<a href="Chapter6/14background_image.html">14background_image.html</a><br>
-<a href="Chapter6/19background_repeatNone.html">19background_repeatNone.html</a><br>
-<a href="Chapter6/24font_size.html">24font_size.html</a><br>
-<a href="Chapter6/28font_styleWeight.html">28font_styleWeight.html</a><br>
-<a href="Chapter6/34position_absolute.html">34position_absolute.html</a><br>
-<a href="Chapter6/37position_fomulaBasic.html">37position_fomulaBasic.html</a><br>
-<a href="Chapter6/43float_basic.html">43float_basic.html</a><br>
-<a href="Chapter6/48shadow_textShadow.html">48shadow_textShadow.html</a><br>
+    <div class="chapter-box">
+        <h2 class="chapter-title">Chapter5</h2>
+        <ul>
+            <li><a href="Chapter5/1selector_tagidclass.html">1selector_tagidclass.html</a></li>
+            <li><a href="Chapter5/9attribute_basic.html">9attribute_basic.html</a></li>
+            <li><a href="Chapter5/11desc_descendants.html">11desc_descendants.html</a></li>
+            <li><a href="Chapter5/13desc_tableWithChildren.html">13desc_tableWithChildren.html</a></li>
+            <li><a href="Chapter5/14etc_state.html">14etc_state.html</a></li>
+            <li><a href="Chapter5/16etc_structure.html">16etc_structure.html</a></li>
+            <li><a href="Chapter5/17etc_structureFalse.html">17etc_structureFalse.html</a></li>
+            <li><a href="Chapter5/19CSSUnit_base.html">19CSSUnit_base.html</a></li>
+        </ul>
+    </div>
 
-Chapter7
-<a href="Chapter7/1floatWithOverflow1.html">1_box_widthHeight.html</a><br>
-<a href="Chapter7/2noteclear.html">2noteclear.html</a><br>
-<a href="Chapter7/3marginWidth.html">3marginWidth.html</a><br>
-<a href="Chapter7/4oneTrueLayout.html">4oneTrueLayout.html</a><br>
-<a href="Chapter7/5note_flex.html">5note_flex.html</a><br>
-<a href="Chapter7/6absolutePosition.html">6absolutePosition.html</a><br>
-<a href="Chapter7/7absolutePosition_align.html">7absolutePosition_align.html</a><br>
-<a href="Chapter7/8fixedBar.html">8fixedBar.html</a><br>
-<a href="Chapter7/9ellipsis.html">9ellipsis.html</a><br>
+    <div class="chapter-box">
+        <h2 class="chapter-title">Chapter6</h2>
+        <ul>
+            <li><a href="Chapter6/1_box_widthHeight.html">1_box_widthHeight.html</a></li>
+            <li><a href="Chapter6/8display_none.html">8display_none.html</a></li>
+            <li><a href="Chapter6/12display_inlineWithMargin.html">12display_inlineWithMargin.html</a></li>
+            <li><a href="Chapter6/13display_inline-blockWithhMargin.html">13display_inline-blockWithhMargin.html</a></li>
+            <li><a href="Chapter6/14background_image.html">14background_image.html</a></li>
+            <li><a href="Chapter6/19background_repeatNone.html">19background_repeatNone.html</a></li>
+            <li><a href="Chapter6/24font_size.html">24font_size.html</a></li>
+            <li><a href="Chapter6/28font_styleWeight.html">28font_styleWeight.html</a></li>
+            <li><a href="Chapter6/34position_absolute.html">34position_absolute.html</a></li>
+            <li><a href="Chapter6/37position_fomulaBasic.html">37position_fomulaBasic.html</a></li>
+            <li><a href="Chapter6/43float_basic.html">43float_basic.html</a></li>
+            <li><a href="Chapter6/48shadow_textShadow.html">48shadow_textShadow.html</a></li>
+        </ul>
+    </div>
 
-Chapter8
-<a href="Chapter8/1without_meta.html">1without_meta.html</a><br>
-<a href="Chapter8/2_1note_meta.html">3at_media_rule.html</a><br>
-<a href="Chapter8/2with_meta.html">7media_feature.html</a><br>
-<a href="Chapter8/3at_media_rule copy.html">9pattern1.html</a><br>
-<a href="Chapter8/4media_attribute.html">9pattern1.html</a><br>
-<a href="Chapter8/7media_feature.html">9pattern1.html</a><br>
-<a href="Chapter8/8orientation.html">9pattern1.html</a><br>
-<a href="Chapter8/9pattern1.html">9pattern1.html</a><br>
+    <div class="chapter-box">
+        <h2 class="chapter-title">Chapter7</h2>
+        <ul>
+            <li><a href="Chapter7/1floatWithOverflow1.html">1floatWithOverflow1.html</a></li>
+            <li><a href="Chapter7/2noteclear.html">2noteclear.html</a></li>
+            <li><a href="Chapter7/3marginWidth.html">3marginWidth.html</a></li>
+            <li><a href="Chapter7/4oneTrueLayout.html">4oneTrueLayout.html</a></li>
+            <li><a href="Chapter7/5note_flex.html">5note_flex.html</a></li>
+            <li><a href="Chapter7/6absolutePosition.html">6absolutePosition.html</a></li>
+            <li><a href="Chapter7/7absolutePosition_align.html">7absolutePosition_align.html</a></li>
+            <li><a href="Chapter7/8fixedBar.html">8fixedBar.html</a></li>
+            <li><a href="Chapter7/9ellipsis.html">9ellipsis.html</a></li>
+        </ul>
+    </div>
 
+    <div class="chapter-box">
+        <h2 class="chapter-title">Chapter8</h2>
+        <ul>
+            <li><a href="Chapter8/1without_meta.html">1without_meta.html</a></li>
+            <li><a href="Chapter8/2_1note_meta.html">2_1note_meta.html</a></li>
+            <li><a href="Chapter8/2with_meta.html">2with_meta.html</a></li>
+            <li><a href="Chapter8/3at_media_rule%20copy.html">3at_media_rule copy.html</a></li>
+            <li><a href="Chapter8/4media_attribute.html">4media_attribute.html</a></li>
+            <li><a href="Chapter8/7media_feature.html">7media_feature.html</a></li>
+            <li><a href="Chapter8/8orientation.html">8orientation.html</a></li>
+            <li><a href="Chapter8/9pattern1.html">9pattern1.html</a></li>
+            <li><a href="Chapter8/10pattern2.html">10pattern2.html</a></li>
+            <li><a href="Chapter8/11pattern3.html">11pattern3.html</a></li>
+            <li><a href="Chapter8/12pattern4.html">12pattern4.html</a></li>
+            <li><a href="Chapter8/10blog_layout.html">10blog_layout.html (과제: 블로그 레이아웃)</a></li>
+            <li><a href="Chapter8/13blog_style.html">13blog_style.html (과제: 블로그 스타일시트 적용)</a></li>
+        </ul>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <footer id="main-footer">
+        2026109954 / 송유경 / z
+    </footer>
+</div>
 </body>
 </html>
